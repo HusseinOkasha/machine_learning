@@ -41,6 +41,7 @@ y=LabelEncoder_y.fit_transform(y)
 
 #spliting the dataset
 from sklearn.model_selection import train_test_split
+# test size determine how much of the data will be used as test data
 X_train, X_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state = 1)
 print(X_train)
 print(X_test)
